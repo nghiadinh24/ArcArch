@@ -1,0 +1,17 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+
+// text 
+.textTitle {
+    @include textTitle;
+}
+
+.textDescription {
+    @include textDescription;
+}
+
+// button
+
+.primaryBtn {
+    @include primaryBtn;
+}

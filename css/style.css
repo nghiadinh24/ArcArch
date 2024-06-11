@@ -1,0 +1,101 @@
+.textTitle {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 92px;
+  color: #8A6C60;
+}
+
+.textDescription {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #262626;
+}
+
+.primaryBtn {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: start;
+  gap: 12px;
+  padding: 8px 16px;
+  color: #8A6C60;
+}
+
+.main-nav {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 42px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 42px;
+}
+
+.nav-link {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hero-section {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 0 120px;
+}
+
+#myVideo {
+  position: static;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.hero-title-row {
+  position: absolute;
+  bottom: 32px;
+}
+
+.hero-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 80px;
+  line-height: 100px;
+  text-align: start;
+  font-weight: 300;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

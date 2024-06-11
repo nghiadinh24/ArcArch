@@ -1,0 +1,33 @@
+@import '_variable.scss';
+
+
+// text
+
+@mixin textTitle {
+    font-family: $font-primary;
+    font-weight: $fontRe;
+    font-size: 84px;
+    line-height: 92px;
+    @include color-text-primary();
+}
+
+@mixin textDescription {
+    font-family: $font-secondary;
+    font-weight: $fontRe;
+    font-size: 24px;
+    line-height: 32px;
+    @include color-text-dark();
+}
+
+// button
+
+@mixin primaryBtn {
+    font-family: $font-secondary;
+    font-weight: $fontMd;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: start;
+    gap: 12px;
+    padding: 8px 16px;
+    @include color-text-primary;
+}

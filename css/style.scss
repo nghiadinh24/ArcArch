@@ -1,0 +1,76 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_output.scss';
+
+.main-nav {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    top: 42px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 42px;
+}
+
+.nav-link {
+    font-family: $font-secondary;
+    font-weight: $fontRe;
+    font-size: 16px;
+    line-height: 24px;
+    @include color-text-white;
+    text-decoration: none;
+}
+
+.hero-section {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 0 120px;
+}
+
+#myVideo {
+    position: static;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-title-row {
+    position: absolute;
+    bottom: 32px;
+}
+
+.hero-title {
+    font-family: $font-primary;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: start;
+    font-weight: $fontLi;@include color-text-white;
+}

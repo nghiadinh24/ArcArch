@@ -1,0 +1,70 @@
+// color-neutral
+
+$color-neutral:#707070;
+$color-neutral-50:#F6F6F6;
+$color-neutral-100:#E7E7E7;
+$color-neutral-200: #D1D1D1;
+$color-neutral-300:#B0B0B0;
+$color-neutral-400:#888888;
+$color-neutral-500:#707070;
+$color-neutral-600:#5D5D5D;
+$color-neutral-700:#4F4F4F;
+$color-neutral-800:#454545;
+$color-neutral-900:#3D3D3D;
+$color-neutral-950:#262626;
+
+// color-primary
+
+$color-primary: #8A6C60;
+$color-primary-0:#FFFFFF;
+$color-primary-50: #F5F3F1;
+$color-primary-100: #E6E0DB;
+$color-primary-200:#CFC2B9;
+$color-primary-300:#B39E91;
+$color-primary-400:#9E8071;
+$color-primary-500:#8A6C60;
+$color-primary-600:#7A5C54;
+$color-primary-700:#634945;
+$color-primary-800:#553F3E;
+$color-primary-900:#4B3838;
+$color-primary-950:#2A1E1F;
+
+// color-text 
+
+@mixin color-text-white {
+    color: $color-primary-0;
+}
+
+@mixin color-text-primary {
+    color: $color-primary;
+}
+
+@mixin color-text-dark {
+    color: $color-neutral-950;
+}
+
+@mixin color-text-gray {
+    color: $color-neutral-800;
+}
+
+// color-bg 
+
+@mixin color-bg-white {
+    background-color: $color-primary-0;
+}
+
+@mixin color-bg-primary {
+    background-color: $color-primary;
+}
+
+// font
+
+$font-primary: "Libre Baskerville",
+serif;
+$font-secondary: "DM Sans",
+sans-serif;
+$fontRe : 400;
+$fontLi : 300;
+$fontMd : 500;
+$fontBold: 600;
+

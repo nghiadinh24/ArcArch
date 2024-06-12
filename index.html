@@ -13,6 +13,7 @@
         rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" href="./css/frameworks/simple-grid.css">
     <!-- reset css -->
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-    <!-- nav -->
+    <!-- nav-white -->
     <header class="main-nav">
         <div class="nav-container container">
             <div class="nav-row">
@@ -39,7 +40,24 @@
             </div>
         </div>
     </header>
-    <!-- end nav -->
+    <!-- end nav-white -->
+    <!-- nav-dark -->
+    <header class="main-nav-dark">
+        <div class="nav-container container">
+            <div class="nav-row">
+                <a href="index.html" class="nav-brand">
+                    <img src="./assets/logo.svg" alt="">
+                </a>
+                <div class="nav-items">
+                    <a href="#" class="nav-link-dark">Home</a>
+                    <a href="#" class="nav-link-dark">About</a>
+                    <a href="#" class="nav-link-dark">Team</a>
+                    <a href="#" class="nav-link-dark">Services</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end nav-dark -->
     <!-- hero-section -->
     <section class="hero-section">
         <video autoplay muted loop id="myVideo">
@@ -119,7 +137,7 @@
                 <h1 class="last-title col-8" id="lastTitle">
                     BEAUTIFUL HOMES, <br> HEALTHY PLANET
                 </h1>
-                <p class="last-description col-4">
+                <p class="last-description col-4" id="lastDescription">
                     We are transforming residential construction through fast and versatile modern design that reduces
                     time, labor, and waste.
                 </p>
@@ -130,6 +148,44 @@
         </div>
     </section>
     <!-- end last-section -->
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-row row">
+                <div class="footer-logo-col col-3">
+                    <a href="index.html" class="footer-brand">
+                        <img src="./assets/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer-icon-wrap">
+                        <i class="ph-fill ph-facebook-logo footer-icon"></i>
+                        <i class="ph-fill ph-linkedin-logo footer-icon"></i>
+                        <i class="ph-fill ph-behance-logo footer-icon"></i>
+                    </div>
+                    <p class="footer-cpr">Imagin8 © 2024, All Rights Reserved</p>
+                </div>
+                <div class="col-9 footer-item">
+                    <div class="footer-link-col">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="index.html" class="footer-link">About</a>
+                        <a href="index.html" class="footer-link">Teams</a>
+                        <a href="index.html" class="footer-link">Services</a>
+                    </div>
+                    <div class="footer-link-col">
+                        <a href="index.html" class="footer-link">Privacy</a>
+                        <a href="index.html" class="footer-link">Contact</a>
+                        <a href="index.html" class="footer-link">Contact</a>
+                        <a href="index.html" class="footer-link">Contact</a>
+                    </div>
+                    <div class="footer-link-col">
+                        <p class="footer-link">contact@imagin8.com</p>
+                        <p class="footer-link">(+84) 123 456 789</p>
+                        <p class="footer-link">58 To Huu, Trung Van, Nam Tu Liem, Hanoi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
     <!-- main js -->
     <script src="./js/main.js"></script>
     <!-- splittype -->

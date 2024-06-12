@@ -371,4 +371,22 @@
   line-height: 24px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.img-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#imgSection1 {
+  background-image: url("./images/img_section_1.jpeg");
+}
+
+#imgSection2 {
+  background-image: url("./images/img_section_2.jpeg");
+}
+
+#imgSection3 {
+  background-image: url("./images/img_section_3.jpeg");
 }/*# sourceMappingURL=style.css.map */

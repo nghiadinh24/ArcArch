@@ -61,6 +61,36 @@ tl_preloader
     duration: 1,
     ease: "power3.out",
 },"-=1");
+
+// nav
+const navLight = gsap.to(".main-nav",{
+    y: -200,
+    opacity:0,
+    ease: "power3.out",
+    duration: 1,
+})
+ScrollTrigger.create({
+    trigger: ".exclusive-section",
+    markers: false,
+    animation: navLight,
+    start: "top top",
+    end: "top 20%",
+    scrub: true,
+})
+const navDark = gsap.to(".main-nav-dark",{
+    y:0,
+    opacity: 1,
+    ease: "power3.out",
+    duration: 1,
+})
+ScrollTrigger.create({
+    trigger: ".exclusive-section",
+    markers: false,
+    animation: navDark,
+    start: "top top",
+    end: "top 20%",
+    scrub: 1,
+})
 // exclusive-section
 const exTitle = new SplitType ("#exTitle",{type:"words"});
 const exWords = exTitle.words;
@@ -241,7 +271,7 @@ lastTl
 },"=-1")
 ScrollTrigger.create ({
     trigger: ".last-section",
-    markers: true,
+    markers: false,
     animation: lastTl,
     start: "top center",
     end: "60% center",

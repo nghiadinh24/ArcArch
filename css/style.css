@@ -47,12 +47,15 @@
   z-index: 10;
   width: 100%;
   position: fixed;
-  top: 42px;
+  padding-top: 24px;
+  top: 0px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(-120px);
+  opacity: 0;
 }
 
 .nav-link-dark {
@@ -92,6 +95,7 @@
 .hero-section {
   height: 100vh;
   position: relative;
+  overflow: hidden !important;
 }
 
 .hero-section-container {

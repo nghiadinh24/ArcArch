@@ -72,5 +72,156 @@
     font-size: 80px;
     line-height: 100px;
     text-align: start;
-    font-weight: $fontLi;@include color-text-white;
+    font-weight: $fontLi;
+    @include color-text-white;
+}
+
+// exclusive-section
+.default-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.exclusive-section {
+    height: auto;
+    padding: 120px 0;
+    @include color-bg-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exclusive-content-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.exclusive-img-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.exclusive-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    height: auto;
+    padding: 42px 0;
+}
+
+.exclusive-img-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.exclusive-title {
+    @include textTitle;
+}
+
+.exclusive-description {
+    @include textDescription;
+}
+
+// gallery-section
+
+.gallery-section {
+    height: auto;
+    padding: 120px 0;
+    @include color-bg-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.gallery-title {
+    @include textTitle;
+}
+
+.gallery-description {
+    @include textDescription;
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-img-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.gallery-img-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.gallery-img-wrap-sm {
+    width: 100%;
+}
+
+// last section 
+
+.last-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 120px 0;
+}
+
+.last-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+.last-title {
+    @include textTitle;
+}
+
+.last-description {
+    @include textDescription;
+}
+
+.last-content-row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }

@@ -6,16 +6,16 @@
 @mixin textTitle {
     font-family: $font-primary;
     font-weight: $fontRe;
-    font-size: 84px;
-    line-height: 92px;
+    font-size: 64px;
+    line-height: 72px;
     @include color-text-primary();
 }
 
 @mixin textDescription {
     font-family: $font-secondary;
-    font-weight: $fontRe;
-    font-size: 24px;
-    line-height: 32px;
+    font-weight: $fontLi;
+    font-size: 20px;
+    line-height: 28px;
     @include color-text-dark();
 }
 
@@ -23,11 +23,17 @@
 
 @mixin primaryBtn {
     font-family: $font-secondary;
-    font-weight: $fontMd;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: $fontRe;
+    font-size: 18px;
+    line-height: 26px;
     text-align: start;
     gap: 12px;
     padding: 8px 16px;
     @include color-text-primary;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }

@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArcArch</title>
     <!-- font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <!-- grid -->
-    <link rel="stylesheet" href="./css/grid.css">
+    <!-- icon -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" href="./css/frameworks/simple-grid.css">
     <!-- reset css -->
     <link rel="stylesheet" href="./css/frameworks/reset.css">
     <!-- style -->
@@ -45,7 +47,7 @@
         </video>
         <div class="hero-section-container">
             <div class="hero-title-row">
-                <h1 class="hero-title">
+                <h1 class="hero-title" id="heroTitle">
                     DESIGNING SPACES <br>
                     INSPIRE LIVES
                 </h1>
@@ -53,7 +55,81 @@
         </div>
     </section>
     <!-- end hero-section -->
-
+    <section class="exclusive-section">
+        <div class="exclusive-container container">
+            <div class="row exclusive-content-row">
+                <div class="exclusive-content-wrap col-6">
+                    <h1 class="exclusive-title" id="exTitle">
+                        EXCLUSIVE <br>
+                        ARCHITECTURE
+                    </h1>
+                    <p class="exclusive-description" id="exDescription">
+                        A lifestyle that would be shaped by the enviroment that we create in our project
+                    </p>
+                </div>
+            </div>
+            <div class="row exclusive-img-row">
+                <div class="exclusive-img-wrap col-10">
+                    <img src="./assets/exclusive_img.png" alt="" class="default-img ukiyo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end exclusive-section -->
+    <!-- gallery-section -->
+    <section class="gallery-section">
+        <div class="gallery-container container">
+            <div class="gallery-row row">
+                <div class="gallery-content col-10">
+                    <h1 class="gallery-title" id="galleryTitle">
+                        IT BEGINS WITH CURIOSITY.
+                    </h1>
+                    <p class="gallery-description" id="galleryDescription">
+                        Working across architecture, landscape, urbanism, and interiors, we co-create and innovate –
+                        cultivating desirable futures through our designs. 
+                    </p>
+                </div>
+                <a href="#" class="primaryBtn col-2" id="galleryBtn">See detail <i
+                        class="ph-duotone ph-arrow-right"></i>
+                </a>
+            </div>
+            <div class="gallery-img-row row">
+                <div class="gallery-img-wrap col-8">
+                    <img src="./assets/gallery_img_left_1.png" class="gallery-img ukiyo" alt="">
+                </div>
+                <div class="gallery-img-wrap col-4">
+                    <img src="./assets/gallery_img_right_1.png" alt="" class="gallery-img ukiyo">
+                </div>
+            </div>
+            <div class="gallery-img-row row">
+                <div class="gallery-img-wrap col-4">
+                    <img src="./assets/gallery_img_left2.png" class="gallery-img ukiyo" alt="">
+                </div>
+                <div class="gallery-img-wrap col-8">
+                    <img src="./assets/gallery_img_right2.png" alt="" class="gallery-img ukiyo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end gallery-section -->
+    <!-- last-section -->
+    <section class="last-section">
+        <div class="last-container container">
+            <div class="last-content-row row">
+                <h1 class="last-title col-8" id="lastTitle">
+                    BEAUTIFUL HOMES, <br> HEALTHY PLANET
+                </h1>
+                <p class="last-description col-4">
+                    We are transforming residential construction through fast and versatile modern design that reduces
+                    time, labor, and waste.
+                </p>
+            </div>
+            <div class="last-img-row row">
+                <img src="./assets/last_big_img.png" class="ukiyo" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end last-section -->
     <!-- main js -->
     <script src="./js/main.js"></script>
     <!-- splittype -->
@@ -65,6 +141,10 @@
     <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
     <!-- ukiyo -->
     <script src="https://cdn.jsdelivr.net/npm/ukiyojs@4.1.2/dist/ukiyo.min.js"></script>
+    <script>
+        new Ukiyo(".ukiyo");
+        FlexMasonry.init('.grid');
+    </script>
 </body>
 
 </html>
